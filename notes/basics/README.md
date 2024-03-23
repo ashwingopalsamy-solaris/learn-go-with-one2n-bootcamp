@@ -10,3 +10,5 @@ Notes:
 - In `switch` statement, Go runs only the first successful case and inserts the `break` automatically, unlike C, C++, Java & JS.
 - `defer` calls are evaluated immediately but the function call is not executed until the surrounding function returns.
 - Deferred function calls are pushed onto a stack. When a function returns, its deferred calls are executed in **last-in-first-out** order.
+- `Slices` are like references to `arrays`, when you create a slice from an existing array - you are essentially interacting wit the underlying array.
+- Zero value of a `slice` is `nil`.
