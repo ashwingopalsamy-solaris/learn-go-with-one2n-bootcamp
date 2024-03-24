@@ -19,3 +19,10 @@
 - In Go, a method is just a function with receiver argument.
 - One cannot declare a method with a receiver whose type is defined in another package (including internal packages).
 - Interfaces are implemented implicitly in Go. There is no `implements` keyword.
+
+### Channels and Go-Routines:
+- Once a channel is created with a specific capacity, that capacity remains fixed for the lifetime of the channel.
+- 'Resizing' of a channel can be done dynamically during runtime, by creating a new channel with desired capacity and moving the elements from old channel to new.
+- `cap` keyword is used to fetch the capacity of a channel.
+
+// Start from sync.Mutex tomorrow! :)
