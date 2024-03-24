@@ -1,6 +1,8 @@
 # Tour of Go
 
-Notes:
+## Notes
+
+### Basics:
 - Variables declared inside an `if short` statement will also be available in `else` blocks.
 - Order of Evaluation in Function Arguments:
     - In Go, function arguments are evaluated before the function is called.
@@ -12,3 +14,8 @@ Notes:
 - Deferred function calls are pushed onto a stack. When a function returns, its deferred calls are executed in **last-in-first-out** order.
 - `Slices` are like references to `arrays`, when you create a slice from an existing array - you are essentially interacting wit the underlying array.
 - Zero value of a `slice` is `nil`.
+
+### Methods and Interfaces:
+- In Go, a method is just a function with receiver argument.
+- One cannot declare a method with a receiver whose type is defined in another package (including internal packages).
+- Interfaces are implemented implicitly in Go. There is no `implements` keyword.
